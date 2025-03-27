@@ -18,14 +18,14 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "From research to creation — a deep dive into projects exploring math, coding, and complex systems.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
         },{id: "nav-repositories",
-          title: "repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
+          title: "Repositories",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
@@ -48,9 +48,9 @@ ninja.data = [{
           window.location.href = "/blog/2025/starter_code/";
         
       },
-    },{id: "post-an-introduction-to-mpi-in-python-part-4",
+    },{id: "post-an-introduction-to-mpi-in-python-part-amp-nbsp-4",
       
-        title: "An Introduction to MPI in Python - Part 4",
+        title: "An Introduction to MPI in Python - Part&amp;nbsp;4",
       
       description: "the devil is in the details",
       section: "Posts",
@@ -59,9 +59,9 @@ ninja.data = [{
           window.location.href = "/blog/2025/MPI-part4/";
         
       },
-    },{id: "post-an-introduction-to-mpi-in-python-part-3",
+    },{id: "post-an-introduction-to-mpi-in-python-part-amp-nbsp-3",
       
-        title: "An Introduction to MPI in Python - Part 3",
+        title: "An Introduction to MPI in Python - Part&amp;nbsp;3",
       
       description: "the devil is in the details",
       section: "Posts",
@@ -70,9 +70,9 @@ ninja.data = [{
           window.location.href = "/blog/2025/MPI-part3/";
         
       },
-    },{id: "post-an-introduction-to-mpi-in-python-part-2",
+    },{id: "post-an-introduction-to-mpi-in-python-part-amp-nbsp-2",
       
-        title: "An Introduction to MPI in Python - Part 2",
+        title: "An Introduction to MPI in Python - Part&amp;nbsp;2",
       
       description: "scaling to write proper parallelized functions",
       section: "Posts",
@@ -81,9 +81,9 @@ ninja.data = [{
           window.location.href = "/blog/2025/MPI-part2/";
         
       },
-    },{id: "post-an-introduction-to-mpi-in-python-part-1",
+    },{id: "post-an-introduction-to-mpi-in-python-part-amp-nbsp-1",
       
-        title: "An Introduction to MPI in Python - Part 1",
+        title: "An Introduction to MPI in Python - Part&amp;nbsp;1",
       
       description: "basic terminology, MPI functions, and blocking",
       section: "Posts",
@@ -92,16 +92,26 @@ ninja.data = [{
           window.location.href = "/blog/2025/MPI-part1/";
         
       },
-    },{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+    },{id: "projects-mathbf-pmb-ln-s-d-pmb-ln-t-epsilon-pmb-1-pmb-weak-tractability",
+          title: '$\mathbf{\pmb{(\ln}^s d, \pmb{\ln}^t \epsilon^{\pmb{-}1}\pmb{)}}$-Weak Tractability',
+          description: "Undergraduate Independent Work in Complexity Theory",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/research1_COS424_project1/";
-            },},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+              window.location.href = "/projects/complexity-theory/";
+            },},{id: "projects-cos-424-projects",
+          title: 'COS 424 Projects',
+          description: "Projects from a research class",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/website1_ticket-website-frontend/";
+              window.location.href = "/projects/cos424-projects/";
+            },},{id: "projects-evaluating-compositionality-of-vision-and-language-models",
+          title: 'Evaluating Compositionality of Vision and Language Models',
+          description: "Undergraduate Thesis in Computer Vision",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/cv-thesis/";
+            },},{id: "projects-ticket-stub-website",
+          title: 'Ticket Stub Website',
+          description: "TSX and CSS practice challenge",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/ticket-challenge-frontend/";
             },},{
         id: 'social-email',
         title: 'email',
