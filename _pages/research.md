@@ -1,14 +1,19 @@
 ---
 layout: default
-title: projects
-projects_name: Projects in Focus
-permalink: /projects/
-description: Turning curiosity into code — projects that develop new skills and explore new ideas
+title: research
+projects_name: Research
+permalink: /research/
+description: From theses to explorations - in-depth research in math, machine learning, and data science
 nav: true
-nav_order: 4
-display_categories: [websites]
+nav_order: 3
+display_categories: [papers, explorations]
 horizontal: false
 ---
+
+<header class="post-header">
+  <h1 class="post-title">{{ page.projects_name }}</h1>
+  <p class="post-description">{{ page.description }}</p>
+</header>
 
 <!-- pages/projects.md -->
 <div class="projects">
@@ -18,7 +23,7 @@ horizontal: false
   <a id="{{ category }}" href=".#{{ category }}">
     <h2 class="category">{{ category }}</h2>
   </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
+  {% assign categorized_projects = site.research | where: "category", category %}
   {% assign sorted_projects = categorized_projects | sort: "importance" %}
   <!-- Generate cards for each project -->
   {% if page.horizontal %}
