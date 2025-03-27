@@ -37,7 +37,72 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{
+        },{id: "post-starter-code",
+      
+        title: "Starter_code",
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/starter_code/";
+        
+      },
+    },{id: "post-an-introduction-to-mpi-in-python-part-4",
+      
+        title: "An Introduction to MPI in Python - Part 4",
+      
+      description: "the devil is in the details",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/MPI-part4/";
+        
+      },
+    },{id: "post-an-introduction-to-mpi-in-python-part-3",
+      
+        title: "An Introduction to MPI in Python - Part 3",
+      
+      description: "the devil is in the details",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/MPI-part3/";
+        
+      },
+    },{id: "post-an-introduction-to-mpi-in-python-part-2",
+      
+        title: "An Introduction to MPI in Python - Part 2",
+      
+      description: "scaling to write proper parallelized functions",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/MPI-part2/";
+        
+      },
+    },{id: "post-an-introduction-to-mpi-in-python-part-1",
+      
+        title: "An Introduction to MPI in Python - Part 1",
+      
+      description: "basic terminology, MPI functions, and blocking",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/MPI-part1/";
+        
+      },
+    },{id: "projects-project-1",
+          title: 'project 1',
+          description: "with background image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/research1_COS424_project1/";
+            },},{id: "projects-project-1",
+          title: 'project 1',
+          description: "with background image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/website1_ticket-website-frontend/";
+            },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
