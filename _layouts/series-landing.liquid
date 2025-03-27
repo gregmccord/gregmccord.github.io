@@ -1,0 +1,38 @@
+---
+layout: default
+---
+{% if page._styles %}
+  <!-- Page/Post style -->
+  <style type="text/css">
+    {{ page._styles }}
+  </style>
+{% endif %}
+
+<div class="post">
+  <header class="post-header">
+    {% if page.formatted_title %}
+      <h1 class="post-title">{{ page.formatted_title }}</h1>
+    {% else %}
+      <h1 class="post-title">{{ page.title }}</h1>
+    {% endif %}
+
+    <div class="post-description">
+      <p class="post-description-text">{{ page.description }}</p>
+    </div>
+  </header>
+
+  <article>
+    <div id="markdown-content">
+      {{ content }}
+    </div>
+
+    <br>
+    <hr>
+    {% include post_list.liquid %}
+    <br>
+  </article>
+
+  {% if site.giscus and page.giscus_comments %}
+    {% include giscus.liquid %}
+  {% endif %}
+</div>
