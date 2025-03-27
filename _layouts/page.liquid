@@ -14,6 +14,14 @@ layout: default
     <p class="post-description">{{ page.description }}</p>
   </header>
 
+  {% if page.full_paper_pdf %}
+    {% include pdf_link.liquid %}
+  {% endif %}
+
+  {% if page.website_link %}
+    {% include website_link.liquid %}
+  {% endif %}
+
   <article>
     {{ content }}
   </article>

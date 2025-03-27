@@ -1,13 +1,19 @@
 ---
-layout: page
+layout: default
 title: projects
+projects_name: Projects in Focus
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: From research to creation — a deep dive into projects exploring math, coding, and complex systems.
 nav: true
 nav_order: 3
 display_categories: [research, websites]
 horizontal: false
 ---
+
+<header class="post-header">
+  <h1 class="post-title">{{ page.projects_name }}</h1>
+  <p class="post-description">{{ page.description }}</p>
+</header>
 
 <!-- pages/projects.md -->
 <div class="projects">
