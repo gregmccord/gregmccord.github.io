@@ -1,0 +1,68 @@
+{% if page.prev_in_series or page.next_in_series %}
+  <hr>
+  <div style="display: flex; justify-content: space-between; align-items: stretch; width: 100%; height: 100%;">
+    {% if page.prev_in_series %}
+      {% assign prev_post = site.posts | where: "url", page.prev_in_series | first %}
+      <div style="
+          padding: 10px;
+          border-radius: 10px;
+          margin-right: auto; 
+          width: 45%; 
+          cursor: pointer; 
+          transition: all 0.3s ease;
+          border: 2px solid transparent;
+      " 
+      onmouseover="this.style.border='2px solid var(--global-divider-color)'"
+      onmouseout="this.style.border='2px solid transparent'"
+      onclick="window.location.href='{{ prev_post.url }}'">
+          <div style="display: flex; align-items: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="0 0 50 20" style="vertical-align: middle;">
+              <path d="M45 10 L10 10" stroke="var(--global-text-color)" stroke-width="3" fill="none"/>
+              <polygon points="7,10 15,5 15,15" fill="var(--global-text-color)"/>
+            </svg>
+              <div style="margin-left: 5px; display: flex; align-items: center; margin-right: auto;">Previous</div>
+          </div>
+          <div style="text-align: left; padding-top: 5px;">{{ prev_post.title }}</div>
+      </div>
+    {% else %}
+      <div style="
+          padding: 10px;
+          border-radius: 10px;
+          margin-right: auto; 
+          width: 45%;
+      "></div>
+    {% endif %}
+    <span style="width: 2px; flex-shrink: 0; background-color: var(--global-divider-color); margin: 0 5px;"></span>
+    {% if page.next_in_series %}
+      {% assign next_post = site.posts | where: "url", page.next_in_series | first %}
+      <div style="
+          padding: 10px;
+          border-radius: 10px;
+          margin-left: auto; 
+          width: 45%; 
+          cursor: pointer; 
+          transition: all 0.3s ease;
+          border: 2px solid transparent;
+      " 
+      onmouseover="this.style.border='2px solid var(--global-divider-color)'"
+      onmouseout="this.style.border='2px solid transparent'"
+      onclick="window.location.href='{{ next_post.url }}'">
+          <div style="display: flex; align-items: center; justify-content: flex-end;">
+              <div style="margin-right: 5px; display: flex; align-items: center; margin-left: auto;">Next</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="0 0 50 20" style="vertical-align: middle;">
+                <path d="M5 10 L40 10" stroke="var(--global-text-color)" stroke-width="3" fill="none"/>
+                <polygon points="43,10 35,5 35,15" fill="var(--global-text-color)"/>
+              </svg>
+          </div>
+          <div style="text-align: right; padding-top: 5px;">{{ next_post.title }}</div>
+      </div>
+    {% else %}
+      <div style="
+          padding: 10px;
+          border-radius: 10px;
+          margin-left: auto; 
+          width: 45%;
+      "></div>
+    {% endif %}
+  </div>
+{% endif %}
