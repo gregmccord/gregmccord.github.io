@@ -81,6 +81,10 @@ layout: default
     </div>
   {% endif %}
 
+  {% if page.prev_in_series or page.next_in_series %}
+    {% include in_series.liquid %}
+  {% endif %}
+
   {% if site.related_blog_posts and site.related_blog_posts.enabled %}
     {% if page.related_posts == null or page.related_posts %}
       {% include related_posts.liquid %}
