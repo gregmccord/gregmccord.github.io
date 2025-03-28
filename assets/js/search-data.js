@@ -24,18 +24,11 @@ ninja.data = [{
             window.location.href = "/projects/";
           },
         },{id: "nav-repositories",
-          title: "Repositories",
+          title: "repositories",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
-          },
-        },{id: "nav-cv",
-          title: "cv",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
           },
         },{id: "post-starter-code",
       
@@ -48,9 +41,9 @@ ninja.data = [{
           window.location.href = "/blog/2025/starter_code/";
         
       },
-    },{id: "post-an-introduction-to-mpi-in-python-part-amp-nbsp-4",
+    },{id: "post-an-introduction-to-mpi-in-python-part-4",
       
-        title: "An Introduction to MPI in Python - Part&amp;nbsp;4",
+        title: "An Introduction to MPI in Python - Part 4",
       
       description: "the devil is in the details",
       section: "Posts",
@@ -59,9 +52,9 @@ ninja.data = [{
           window.location.href = "/blog/2025/MPI-part4/";
         
       },
-    },{id: "post-an-introduction-to-mpi-in-python-part-amp-nbsp-3",
+    },{id: "post-an-introduction-to-mpi-in-python-part-3",
       
-        title: "An Introduction to MPI in Python - Part&amp;nbsp;3",
+        title: "An Introduction to MPI in Python - Part 3",
       
       description: "the devil is in the details",
       section: "Posts",
@@ -70,9 +63,9 @@ ninja.data = [{
           window.location.href = "/blog/2025/MPI-part3/";
         
       },
-    },{id: "post-an-introduction-to-mpi-in-python-part-amp-nbsp-2",
+    },{id: "post-an-introduction-to-mpi-in-python-part-2",
       
-        title: "An Introduction to MPI in Python - Part&amp;nbsp;2",
+        title: "An Introduction to MPI in Python - Part 2",
       
       description: "scaling to write proper parallelized functions",
       section: "Posts",
@@ -81,9 +74,9 @@ ninja.data = [{
           window.location.href = "/blog/2025/MPI-part2/";
         
       },
-    },{id: "post-an-introduction-to-mpi-in-python-part-amp-nbsp-1",
+    },{id: "post-an-introduction-to-mpi-in-python-part-1",
       
-        title: "An Introduction to MPI in Python - Part&amp;nbsp;1",
+        title: "An Introduction to MPI in Python - Part 1",
       
       description: "basic terminology, MPI functions, and blocking",
       section: "Posts",
@@ -92,8 +85,8 @@ ninja.data = [{
           window.location.href = "/blog/2025/MPI-part1/";
         
       },
-    },{id: "projects-mathbf-pmb-ln-s-d-pmb-ln-t-epsilon-pmb-1-pmb-weak-tractability",
-          title: '$\mathbf{\pmb{(\ln}^s d, \pmb{\ln}^t \epsilon^{\pmb{-}1}\pmb{)}}$-Weak Tractability',
+    },{id: "projects-lnsd-lnte-1-weak-tractability",
+          title: '(lnsd,lnte-1)-Weak Tractability',
           description: "Undergraduate Independent Work in Complexity Theory",
           section: "Projects",handler: () => {
               window.location.href = "/projects/complexity-theory/";
