@@ -1,0 +1,17 @@
+<div>
+  {% if page.full_paper_pdf %}
+    <div class="post-description-link">
+      <a href="{{page.full_paper_pdf}}" target="_blank">Download the Full Paper (PDF)</a>
+    </div>
+  {% endif %}
+  {% if page.website_link %}
+    <div class="post-description-link">
+      <a href="{{page.website_link}}" target="_blank">View the Full Project Website</a>
+    </div>
+  {% endif %}
+  {% if page.repository_link %}
+    <div class="post-description-link">
+      <a href="{{page.repository_link}}" target="_blank">View the GitHub Repository</a>
+    </div>
+  {% endif %}
+</div>

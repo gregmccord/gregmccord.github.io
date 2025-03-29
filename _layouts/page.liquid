@@ -10,12 +10,31 @@ layout: default
 
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-description">{{ page.description }}</p>
+    {% if page.formatted_title %}
+      <h1 class="post-title">{{ page.formatted_title }}</h1>
+    {% else %}
+      <h1 class="post-title">{{ page.title }}</h1>
+    {% endif %}
+
+    <div class="post-description">
+      <p class="post-description-text">{{ page.description }}</p>
+
+      {% if page.full_paper_pdf or page.repository_link or page.website_link %}
+        {% include page_links.liquid %}
+      {% endif %}
+    </div>
   </header>
 
   <article>
-    {{ content }}
+    {% if page.toc and page.toc.beginning %}
+      <div id="table-of-contents">
+        {% toc %}
+      </div>
+      <hr>
+    {% endif %}
+    <div id="markdown-content">
+      {{ content }}
+    </div>
   </article>
 
   {% if page.related_publications %}

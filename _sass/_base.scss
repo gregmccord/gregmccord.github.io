@@ -2,6 +2,12 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+// Override the default MathJax
+
+mjx-container {
+  font-size: 105% !important;
+}
+
 // Typography
 
 p,
@@ -177,6 +183,7 @@ ul.task-list input[type="checkbox"] {
 
   .card-title {
     color: var(--global-text-color);
+    font-size: 1.75rem;
   }
 
   .card-body {
@@ -232,13 +239,12 @@ ul.task-list input[type="checkbox"] {
   margin-bottom: 2rem;
   font-size: 0.875rem;
 
-  a {
-    color: inherit;
+  .post-description-text {
+    margin-bottom: 0.25rem;
+  }
 
-    &:hover {
-      color: var(--global-theme-color);
-      text-decoration: none;
-    }
+  .post-description-link {
+    margin-bottom: 0.25rem;
   }
 }
 
@@ -907,6 +913,10 @@ html.transition *:after {
 
 // Extra Markdown style (post Customization)
 .post {
+  // Improve spacing of posts
+  display: flex;
+  flex-direction: column;
+
   .post-meta {
     color: var(--global-text-color-light);
     font-size: 0.875rem;
