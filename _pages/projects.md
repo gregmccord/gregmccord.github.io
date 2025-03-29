@@ -10,6 +10,11 @@ display_categories: [websites]
 horizontal: false
 ---
 
+<header class="post-header">
+  <h1 class="post-title">{{ page.projects_name }}</h1>
+  <p class="post-description">{{ page.description }}</p>
+</header>
+
 <!-- pages/projects.md -->
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}
