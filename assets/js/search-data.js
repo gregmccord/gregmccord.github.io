@@ -16,9 +16,16 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
+        },{id: "nav-research",
+          title: "research",
+          description: "From theses to explorations - in-depth research in math, machine learning, and data science",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/research/";
+          },
         },{id: "nav-projects",
           title: "projects",
-          description: "From research to creation — a deep dive into projects exploring math, coding, and complex systems.",
+          description: "Turning curiosity into code — projects that develop new skills and explore new ideas",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -85,26 +92,26 @@ ninja.data = [{
           window.location.href = "/blog/2025/MPI-part1/";
         
       },
-    },{id: "projects-lnsd-lnte-1-weak-tractability",
-          title: '(lnsd,lnte-1)-Weak Tractability',
-          description: "Undergraduate Independent Work in Complexity Theory",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/complexity-theory/";
-            },},{id: "projects-cos-424-projects",
-          title: 'COS 424 Projects',
-          description: "Projects from a research class",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/cos424-projects/";
-            },},{id: "projects-evaluating-compositionality-of-vision-and-language-models",
-          title: 'Evaluating Compositionality of Vision and Language Models',
-          description: "Undergraduate Thesis in Computer Vision",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/cv-thesis/";
-            },},{id: "projects-ticket-stub-website",
+    },{id: "projects-ticket-stub-website",
           title: 'Ticket Stub Website',
           description: "TSX and CSS practice challenge",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ticket-challenge-frontend/";
+            },},{id: "research-lnsd-lnte-1-weak-tractability",
+          title: '(lnsd,lnte-1)-Weak Tractability',
+          description: "Undergraduate Independent Work in Complexity Theory",
+          section: "Research",handler: () => {
+              window.location.href = "/research/complexity-theory/";
+            },},{id: "research-cos-424-projects",
+          title: 'COS 424 Projects',
+          description: "Projects from a research class",
+          section: "Research",handler: () => {
+              window.location.href = "/research/cos424-projects/";
+            },},{id: "research-evaluating-compositionality-of-vision-and-language-models",
+          title: 'Evaluating Compositionality of Vision and Language Models',
+          description: "Undergraduate Thesis in Computer Vision",
+          section: "Research",handler: () => {
+              window.location.href = "/research/cv-thesis/";
             },},{
         id: 'social-email',
         title: 'email',
