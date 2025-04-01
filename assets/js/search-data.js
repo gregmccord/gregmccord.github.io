@@ -48,17 +48,6 @@ ninja.data = [{
           window.location.href = "/blog/2025/starter_code/";
         
       },
-    },{id: "post-an-introduction-to-mpi-in-python-part-4",
-      
-        title: "An Introduction to MPI in Python - Part 4",
-      
-      description: "the devil is in the details",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2025/MPI-part4/";
-        
-      },
     },{id: "post-an-introduction-to-mpi-in-python-part-3",
       
         title: "An Introduction to MPI in Python - Part 3",
@@ -94,7 +83,7 @@ ninja.data = [{
       },
     },{id: "projects-ticket-stub-website",
           title: 'Ticket Stub Website',
-          description: "TSX and CSS practice challenge",
+          description: "TSX and CSS practice frontend challenge",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ticket-challenge-frontend/";
             },},{id: "research-lnsd-lnte-1-weak-tractability",
@@ -102,11 +91,11 @@ ninja.data = [{
           description: "Undergraduate Independent Work in Complexity Theory",
           section: "Research",handler: () => {
               window.location.href = "/research/complexity-theory/";
-            },},{id: "research-cos-424-projects",
-          title: 'COS 424 Projects',
-          description: "Projects from a research class",
+            },},{id: "research-sentiment-analysis",
+          title: 'Sentiment Analysis',
+          description: "A Kaggle-style research project from COS 424 at Princeton",
           section: "Research",handler: () => {
-              window.location.href = "/research/cos424-projects/";
+              window.location.href = "/research/cos424-sentiment-analysis/";
             },},{id: "research-evaluating-compositionality-of-vision-and-language-models",
           title: 'Evaluating Compositionality of Vision and Language Models',
           description: "Undergraduate Thesis in Computer Vision",
