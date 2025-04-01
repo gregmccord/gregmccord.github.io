@@ -91,6 +91,11 @@ ninja.data = [{
           description: "Undergraduate Independent Work in Complexity Theory",
           section: "Research",handler: () => {
               window.location.href = "/research/complexity-theory/";
+            },},{id: "research-fragile-families",
+          title: 'Fragile Families',
+          description: "A Kaggle-style research project from COS 424 at Princeton",
+          section: "Research",handler: () => {
+              window.location.href = "/research/cos424-fragile-families/";
             },},{id: "research-sentiment-analysis",
           title: 'Sentiment Analysis',
           description: "A Kaggle-style research project from COS 424 at Princeton",
