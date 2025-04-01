@@ -1,0 +1,13 @@
+---
+layout: page
+title: Evaluating Compositionality of Vision and Language Models
+description: Undergraduate Thesis in Computer Vision
+importance: 1
+category: papers
+related_publications: false
+full_paper_pdf: /assets/pdf/research_papers/thesis-computer-vision.pdf
+---
+
+## Abstract
+
+While research in computer vision has made many breakthroughs over the past two decades, probing even the most state-of-the-art models reveals glaring shortcomings. For example, the same Visual Question Answering (VQA) model that correctly answers the question "What is the largest measurement on the cup?" might incorrectly respond "yes" to the question "Is there a plate under the elephant?" when an elephant is not even in the picture. Similarly, a top-performing captioning model might incorrectly describe a blue shirt as white or a red flag as black. To address some of these shortcomings, we first propose a vision and language evaluation framework that probes models trained on different tasks to better understand the performance of the models on different detailed concepts. The concepts we analyze are identifying the colors of objects, counting the numbers of objects, and identifying the object types in a scene. We evaluate along each of these dimensions by using distractors (related but incorrect statements) to test along individual dimensions. Further, we also train the models with different levels of supervision along the tested dimension to demonstrate that performance on these tests improves solely with the dimension tested while not inhibiting the models' performance on other dimensions. With this scheme, we quantify the types of queries the models accurately answer and those on which they fail. We develop baselines for our framework using the standard Show and Tell captioning model, Bottom-Up Top-Down captioning model, and Pythia VQA model. Next, we address two reasons for the surprising inconsistencies observed in current VQA models. Namely, responding solely based on the language of the question and putting inappropriate attention on different objects referenced in the question can lead to this undesirable behavior. We generate complex binary questions for VQA models using the scene graphs from the GQA dataset to evaluate how effectively the models are able to align the questions with the corresponding images. Additionally, we test a verification scheme for VQA models to correct for their internal consistency by creating a set of entailed questions and correcting for non-verified answers. On the state-of-the-art Pythia VQA model, our verification improves performance on VQA accuracy from 64.95% to 65.99%. Finally, we take a look at broader extensions of this research into financial applications.
