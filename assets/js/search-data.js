@@ -96,6 +96,11 @@ ninja.data = [{
           description: "A Kaggle-style research project from COS 424 at Princeton",
           section: "Research",handler: () => {
               window.location.href = "/research/cos424-fragile-families/";
+            },},{id: "research-netflix-recommendations",
+          title: 'Netflix Recommendations',
+          description: "A Kaggle-style research project from COS 424 at Princeton",
+          section: "Research",handler: () => {
+              window.location.href = "/research/cos424-netflix-recommendations/";
             },},{id: "research-sentiment-analysis",
           title: 'Sentiment Analysis',
           description: "A Kaggle-style research project from COS 424 at Princeton",
