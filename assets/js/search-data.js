@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "Turning curiosity into code — projects that develop new skills and explore new ideas",
+          description: "Transforming curiosity into code — projects that build new skills and explore innovative ideas.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -81,9 +81,9 @@ ninja.data = [{
           window.location.href = "/blog/2025/MPI-part1/";
         
       },
-    },{id: "projects-ticket-stub-website",
-          title: 'Ticket Stub Website',
-          description: "TSX and CSS practice frontend challenge",
+    },{id: "projects-ticket-stub-generator",
+          title: 'Ticket Stub Generator',
+          description: "TSX and CSS practice front-end challenge",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ticket-challenge-frontend/";
             },},{id: "research-lnsd-lnte-1-weak-tractability",
@@ -91,18 +91,18 @@ ninja.data = [{
           description: "Undergraduate Independent Work in Complexity Theory",
           section: "Research",handler: () => {
               window.location.href = "/research/complexity-theory/";
-            },},{id: "research-fragile-families",
-          title: 'Fragile Families',
+            },},{id: "research-fragile-families-challenge",
+          title: 'Fragile Families Challenge',
           description: "A Kaggle-style research project from COS 424 at Princeton",
           section: "Research",handler: () => {
               window.location.href = "/research/cos424-fragile-families/";
-            },},{id: "research-netflix-recommendations",
-          title: 'Netflix Recommendations',
-          description: "A Kaggle-style research project from COS 424 at Princeton",
+            },},{id: "research-netflix-genre-based-predictions",
+          title: 'Netflix Genre-Based Predictions',
+          description: "An open-ended research project from COS 424 at Princeton",
           section: "Research",handler: () => {
               window.location.href = "/research/cos424-netflix-recommendations/";
-            },},{id: "research-sentiment-analysis",
-          title: 'Sentiment Analysis',
+            },},{id: "research-customer-review-sentiment-analysis",
+          title: 'Customer Review Sentiment Analysis',
           description: "A Kaggle-style research project from COS 424 at Princeton",
           section: "Research",handler: () => {
               window.location.href = "/research/cos424-sentiment-analysis/";
