@@ -96,6 +96,11 @@ ninja.data = [{
           description: "A Kaggle-style research project from COS 424 at Princeton",
           section: "Research",handler: () => {
               window.location.href = "/research/cos424-fragile-families/";
+            },},{id: "research-inferring-movie-characteristics-from-dialogue",
+          title: 'Inferring Movie Characteristics from Dialogue',
+          description: "A novel, self-designed research paper from COS 424 at Princeton",
+          section: "Research",handler: () => {
+              window.location.href = "/research/cos424-movie-dialogue/";
             },},{id: "research-netflix-genre-based-predictions",
           title: 'Netflix Genre-Based Predictions',
           description: "An open-ended research project from COS 424 at Princeton",
