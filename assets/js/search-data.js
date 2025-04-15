@@ -52,7 +52,7 @@ ninja.data = [{
       
         title: "An Introduction to MPI in Python - Part 3",
       
-      description: "the devil is in the details",
+      description: "I/O and the end of the basics",
       section: "Posts",
       handler: () => {
         
@@ -79,6 +79,17 @@ ninja.data = [{
       handler: () => {
         
           window.location.href = "/blog/2025/MPI-part1/";
+        
+      },
+    },{id: "post-an-introduction-to-mpi-in-python",
+      
+        title: "An Introduction to MPI in Python",
+      
+      description: "Learn the functions and put them into practice",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/MPI-Intro-Series/";
         
       },
     },{id: "projects-ticket-stub-generator",
