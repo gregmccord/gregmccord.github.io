@@ -6,6 +6,9 @@
 
 mjx-container {
   font-size: 105% !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
 }
 
 // Typography
